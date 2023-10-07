@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "venhance",
+	"version": "${version}",
+	"name": "vEnhance",
+	"description": "An enhancement to the vanilla Minecraft experience",
+	"authors": [
+		"Echelon"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/venhance/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.echelon.venhance.VEnhance"
+		],
+		"fabric-datagen": [
+			"net.echelon.venhance.VEnhanceDataGenerator"
+		],
+		"client": [
+			"net.echelon.venhance.VEnhanceClient"
+		]
+	},
+	"mixins": [
+		"venhance.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
