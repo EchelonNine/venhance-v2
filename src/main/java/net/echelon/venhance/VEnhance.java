@@ -1,5 +1,7 @@
 package net.echelon.venhance;
 
+import net.echelon.venhance.block.ModBlocks;
+import net.echelon.venhance.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,7 +14,7 @@ public class VEnhance implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
